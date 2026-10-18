@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hubungi tim Nexora untuk pertanyaan dan kerja sama." />
+    <title>Kontak — Nexora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main>
+      <section class="page-hero contact-hero">
+        <div class="container">
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h1>Mari mulai<br /><span>sesuatu yang baik.</span></h1>
+          <p>Beritahu kami kebutuhan Anda. Tim kami akan membantu mengarahkan langkah selanjutnya.</p>
+        </div>
+      </section>
+      <section class="section container contact-layout">
+        <div class="contact-details">
+          <p class="eyebrow dark-eyebrow">CONTACT INFORMATION</p>
+          <h2>Hubungi kami</h2>
+          <p class="muted">Kami terbuka untuk pertanyaan produk, kemitraan, dan peluang kolaborasi.</p>
+          <div class="contact-item">
+            <span class="contact-symbol">⌖</span>
+            <div>
+              <b>Alamat</b>
+              <p>Jl. Contoh No. 18, Jakarta Selatan, Indonesia</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-symbol">✆</span>
+            <div>
+              <b>Telepon</b>
+              <p>+62 812-3456-7890</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-symbol">✉</span>
+            <div>
+              <b>Email</b>
+              <p>halo@nexora.example</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-symbol">◷</span>
+            <div>
+              <b>Jam operasional</b>
+              <p>Senin–Jumat, 09.00–17.00 WIB</p>
+            </div>
+          </div>
+          <div class="map-placeholder">
+            <span>⌖</span><b>Lokasi kantor Nexora</b><small>Ganti area ini dengan embed Google Maps perusahaan.</small>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <p class="eyebrow dark-eyebrow">SEND A MESSAGE</p>
+          <h2>Kirim pesan</h2>
+          <p class="muted">Isi formulir berikut dan kami akan menghubungi Anda.</p>
+          <label for="name">Nama lengkap <span>*</span></label
+          ><input id="name" name="name" required placeholder="Nama Anda" /><label for="email"
+            >Alamat email <span>*</span></label
+          ><input id="email" name="email" type="email" required placeholder="nama@email.com" /><label for="subject"
+            >Topik</label
+          ><select id="subject" name="subject">
+            <option>Pertanyaan produk</option>
+            <option>Kerja sama bisnis</option>
+            <option>Layanan pelanggan</option>
+            <option>Lainnya</option></select
+          ><label for="message">Pesan <span>*</span></label
+          ><textarea id="message" name="message" rows="5" required placeholder="Ceritakan kebutuhan Anda..."></textarea
+          ><button class="btn btn-dark form-submit" type="submit">Kirim pesan <span>↗</span></button>
+          <p class="form-note" id="form-note" role="status">Demo formulir: belum terhubung ke email atau database.</p>
+        </form>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>

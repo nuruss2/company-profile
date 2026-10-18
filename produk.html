@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jelajahi koleksi produk Nexora." />
+    <title>Produk — Nexora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main>
+      <section class="page-hero product-hero">
+        <div class="container">
+          <p class="eyebrow">THE NEXORA COLLECTION</p>
+          <h1>Produk yang dirancang<br /><span>untuk keseharian.</span></h1>
+          <p>Temukan koleksi pilihan yang memadukan fungsi, estetika, dan kenyamanan.</p>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="catalog-top">
+          <div>
+            <p class="eyebrow dark-eyebrow">OUR PRODUCTS</p>
+            <h2>Jelajahi koleksi</h2>
+          </div>
+          <label class="search-box"
+            ><span>⌕</span
+            ><input id="product-search" type="search" placeholder="Cari produk..." aria-label="Cari produk"
+          /></label>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter produk">
+          <button class="filter-btn active" data-filter="all">Semua</button
+          ><button class="filter-btn" data-filter="home">Smart Home</button
+          ><button class="filter-btn" data-filter="lifestyle">Lifestyle</button
+          ><button class="filter-btn" data-filter="wellness">Wellness</button>
+        </div>
+        <div class="product-grid catalog-grid" id="catalog">
+          <article class="product-card catalog-card" data-category="lifestyle" data-name="smart bottle">
+            <div class="product-photo photo-bottle"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-tag">LIFESTYLE</p>
+                <h3>Smart Bottle</h3>
+                <p>Botol minum untuk rutinitas aktif.</p>
+                <strong>Rp 299.000</strong>
+              </div>
+              <button class="round-arrow" aria-label="Detail Smart Bottle" data-product="Smart Bottle">↗</button>
+            </div>
+          </article>
+          <article class="product-card catalog-card" data-category="wellness" data-name="air purifier">
+            <div class="product-photo photo-purifier"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-tag">WELLNESS</p>
+                <h3>Air Purifier</h3>
+                <p>Menunjang kenyamanan udara di ruang Anda.</p>
+                <strong>Rp 1.299.000</strong>
+              </div>
+              <button class="round-arrow" aria-label="Detail Air Purifier" data-product="Air Purifier">↗</button>
+            </div>
+          </article>
+          <article class="product-card catalog-card" data-category="lifestyle" data-name="portable blender">
+            <div class="product-photo photo-blender"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-tag">LIFESTYLE</p>
+                <h3>Portable Blender</h3>
+                <p>Teman praktis untuk minuman favorit.</p>
+                <strong>Rp 499.000</strong>
+              </div>
+              <button class="round-arrow" aria-label="Detail Portable Blender" data-product="Portable Blender">
+                ↗
+              </button>
+            </div>
+          </article>
+          <article class="product-card catalog-card" data-category="home" data-name="smart lamp">
+            <div class="product-photo photo-lamp"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-tag">SMART HOME</p>
+                <h3>Smart Lamp</h3>
+                <p>Pencahayaan yang mudah disesuaikan.</p>
+                <strong>Rp 649.000</strong>
+              </div>
+              <button class="round-arrow" aria-label="Detail Smart Lamp" data-product="Smart Lamp">↗</button>
+            </div>
+          </article>
+          <article class="product-card catalog-card" data-category="home" data-name="wireless earbuds">
+            <div class="product-photo photo-earbuds"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-tag">SMART HOME</p>
+                <h3>Wireless Earbuds</h3>
+                <p>Audio praktis untuk aktivitas harian.</p>
+                <strong>Rp 799.000</strong>
+              </div>
+              <button class="round-arrow" aria-label="Detail Wireless Earbuds" data-product="Wireless Earbuds">
+                ↗
+              </button>
+            </div>
+          </article>
+          <article class="product-card catalog-card" data-category="lifestyle" data-name="smart watch">
+            <div class="product-photo photo-watch"></div>
+            <div class="product-info">
+              <div>
+                <p class="product-tag">LIFESTYLE</p>
+                <h3>Smart Watch</h3>
+                <p>Bantu pantau aktivitas dalam satu tampilan.</p>
+                <strong>Rp 999.000</strong>
+              </div>
+              <button class="round-arrow" aria-label="Detail Smart Watch" data-product="Smart Watch">↗</button>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>Produk tidak ditemukan. Coba kata kunci lain.</p>
+      </section>
+      <div class="modal" id="product-modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+        <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <button class="modal-close" data-close-modal aria-label="Tutup">×</button>
+          <p class="eyebrow dark-eyebrow">DETAIL PRODUK</p>
+          <h2 id="modal-title">Nama Produk</h2>
+          <p id="modal-copy">Informasi produk.</p>
+          <a class="btn btn-dark" href="kontak.html">Tanyakan produk <span>↗</span></a>
+        </section>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>
